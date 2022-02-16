@@ -1,0 +1,6 @@
+<button (click)="onButtonClick()">{{ buttonText }}</button>
+<p *ngIf="isParagraphVisible">Just simple text</p>
+
+<div *ngFor="let log of logs; let i = index">
+<p [ngStyle]="{backgroundColor: i >= 5 ? 'blue' : 'transparent'}" [ngClass]="{'white': i >= 5}">{{ log }}</p>
+</div>
